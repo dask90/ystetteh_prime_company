@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, Phone, Mail, Clock, Send, Building2 } from 'lucide-react';
+import { Phone, Mail, Clock, Send, Building2 } from 'lucide-react';
 import { useState } from 'react';
 
 export default function ContactPage() {
@@ -84,7 +84,7 @@ export default function ContactPage() {
                                         <p className="text-gray-700">
                                             Y.S. Tetteh Prime Limited
                                             <br />
-                                            Accra, Ghana
+                                            Ejisu, Kumasi, Ghana
                                         </p>
                                     </div>
                                 </div>
@@ -95,8 +95,8 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-sm text-[#c9a961] mb-1">Phone</h3>
-                                        <p className="text-gray-700">+233 XX XXX XXXX</p>
-                                        <p className="text-gray-700">+233 XX XXX XXXX</p>
+                                        <p className="text-gray-700">+233 59 941 2802</p>
+                                        <p className="text-gray-700">+233 25 687 2852</p>
                                     </div>
                                 </div>
 
@@ -111,7 +111,7 @@ export default function ContactPage() {
                                     </div>
                                 </div>
 
-                                <div className="flex gap-4">
+                                {/* <div className="flex gap-4">
                                     <div className="w-12 h-12 bg-[#c9a961]/10 flex items-center justify-center flex-shrink-0">
                                         <Clock className="w-6 h-6 text-[#c9a961]" />
                                     </div>
@@ -121,17 +121,30 @@ export default function ContactPage() {
                                         <p className="text-gray-700">Saturday: 9:00 AM - 2:00 PM</p>
                                         <p className="text-gray-700">Sunday: Closed</p>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
 
-                            {/* Map Placeholder */}
+                            {/* Google Map */}
                             <div className="mt-8">
-                                <div className="aspect-video bg-gray-100 flex items-center justify-center border border-gray-200">
-                                    <MapPin className="w-12 h-12 text-[#c9a961]" />
+                                <div className="aspect-video bg-gray-100 border border-gray-200 overflow-hidden">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.4!2d-1.4726221!3d6.725906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdbeb159858d1dd%3A0x5e8377ae98563c74!2sY.S+Tetteh+Prime+Company+Limited!5e0!3m2!1sen!2sgh!4v1737837765108!5m2!1sen!2sgh"
+                                        width="100%"
+                                        height="100%"
+                                        style={{ border: 0 }}
+                                        allowFullScreen={true}
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
+                                    ></iframe>
                                 </div>
-                                <p className="text-sm text-gray-600 mt-2 text-center">
-                                    View on Google Maps
-                                </p>
+                                <a
+                                    href="https://maps.app.goo.gl/nE1TXRHE87XJXYXb9"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-xs text-[#c9a961] mt-2 text-center block hover:underline"
+                                >
+                                    Open in Google Maps
+                                </a>
                             </div>
                         </div>
 
