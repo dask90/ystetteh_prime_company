@@ -82,8 +82,8 @@ export function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || !isHome
-          ? 'bg-[#1a1a1a] shadow-lg'
-          : 'bg-transparent'
+        ? 'bg-[#1a1a1a] shadow-lg'
+        : 'bg-transparent'
         }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -94,8 +94,12 @@ export function Navigation() {
             onClick={closeMenu}
             className="flex items-center space-x-3 group"
           >
-            <div className="w-10 h-10 bg-[#c9a961] flex items-center justify-center">
-              <span className="text-[#1a1a1a] font-bold text-xl">YS</span>
+            <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
+              <img
+                src="/logo/logo.png"
+                alt="Y.S. Tetteh Prime Limited Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="hidden lg:block">
               <div className="text-white text-lg tracking-tight">
@@ -112,8 +116,8 @@ export function Navigation() {
             <Link
               href="/"
               className={`text-sm tracking-wide transition-colors ${isActive('/')
-                  ? 'text-[#c9a961]'
-                  : 'text-white/90 hover:text-[#c9a961]'
+                ? 'text-[#c9a961]'
+                : 'text-white/90 hover:text-[#c9a961]'
                 }`}
             >
               Home
@@ -122,8 +126,8 @@ export function Navigation() {
             <Link
               href="/about"
               className={`text-sm tracking-wide transition-colors ${isActive('/about')
-                  ? 'text-[#c9a961]'
-                  : 'text-white/90 hover:text-[#c9a961]'
+                ? 'text-[#c9a961]'
+                : 'text-white/90 hover:text-[#c9a961]'
                 }`}
             >
               About the Group
@@ -137,8 +141,8 @@ export function Navigation() {
             >
               <button
                 className={`text-sm tracking-wide transition-colors flex items-center gap-1 ${pathname.startsWith('/subsidiaries')
-                    ? 'text-[#c9a961]'
-                    : 'text-white/90 hover:text-[#c9a961]'
+                  ? 'text-[#c9a961]'
+                  : 'text-white/90 hover:text-[#c9a961]'
                   }`}
               >
                 Services
@@ -182,22 +186,22 @@ export function Navigation() {
             <Link
               href="/leadership"
               className={`text-sm tracking-wide transition-colors ${isActive('/leadership')
-                  ? 'text-[#c9a961]'
-                  : 'text-white/90 hover:text-[#c9a961]'
+                ? 'text-[#c9a961]'
+                : 'text-white/90 hover:text-[#c9a961]'
                 }`}
             >
               Leadership
             </Link>
 
-            <Link
+            {/* <Link
               href="/careers"
               className={`text-sm tracking-wide transition-colors ${isActive('/careers')
-                  ? 'text-[#c9a961]'
-                  : 'text-white/90 hover:text-[#c9a961]'
+                ? 'text-[#c9a961]'
+                : 'text-white/90 hover:text-[#c9a961]'
                 }`}
             >
               Careers
-            </Link>
+            </Link> */}
 
             <Link
               href="/contact"
@@ -228,8 +232,8 @@ export function Navigation() {
                 href="/"
                 onClick={closeMenu}
                 className={`block w-full text-left px-4 py-3 text-sm ${isActive('/')
-                    ? 'text-[#c9a961] bg-white/5'
-                    : 'text-white/90'
+                  ? 'text-[#c9a961] bg-white/5'
+                  : 'text-white/90'
                   }`}
               >
                 Home
@@ -239,8 +243,8 @@ export function Navigation() {
                 href="/about"
                 onClick={closeMenu}
                 className={`block w-full text-left px-4 py-3 text-sm ${isActive('/about')
-                    ? 'text-[#c9a961] bg-white/5'
-                    : 'text-white/90'
+                  ? 'text-[#c9a961] bg-white/5'
+                  : 'text-white/90'
                   }`}
               >
                 About the Group
@@ -272,8 +276,8 @@ export function Navigation() {
                 href="/leadership"
                 onClick={closeMenu}
                 className={`block w-full text-left px-4 py-3 text-sm ${isActive('/leadership')
-                    ? 'text-[#c9a961] bg-white/5'
-                    : 'text-white/90'
+                  ? 'text-[#c9a961] bg-white/5'
+                  : 'text-white/90'
                   }`}
               >
                 Leadership
@@ -283,8 +287,8 @@ export function Navigation() {
                 href="/careers"
                 onClick={closeMenu}
                 className={`block w-full text-left px-4 py-3 text-sm ${isActive('/careers')
-                    ? 'text-[#c9a961] bg-white/5'
-                    : 'text-white/90'
+                  ? 'text-[#c9a961] bg-white/5'
+                  : 'text-white/90'
                   }`}
               >
                 Careers
@@ -294,8 +298,8 @@ export function Navigation() {
                 href="/contact"
                 onClick={closeMenu}
                 className={`block w-full text-left px-4 py-3 text-sm ${isActive('/contact')
-                    ? 'text-[#c9a961] bg-white/5'
-                    : 'text-white/90'
+                  ? 'text-[#c9a961] bg-white/5'
+                  : 'text-white/90'
                   }`}
               >
                 Contact

@@ -21,8 +21,12 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-[#c9a961] flex items-center justify-center">
-                <span className="text-[#1a1a1a] font-bold text-xl">YS</span>
+              <div className="w-12 h-12 flex items-center justify-center overflow-hidden">
+                <img
+                  src="/logo/logo.png"
+                  alt="Y.S. Tetteh Prime Limited Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <div className="text-white text-sm">Y.S. Tetteh Prime</div>
@@ -102,16 +106,16 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-[#c9a961] mt-1 flex-shrink-0" />
                 <span className="text-white/60 text-sm">
-                  Group Head Office, Accra, Ghana
+                  Group Head Office, Ejisu, Kumasi, Ghana
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-[#c9a961] mt-1 flex-shrink-0" />
-                <span className="text-white/60 text-sm">+233 XX XXX XXXX</span>
+                <span className="text-white/60 text-sm">+233 25 687 2852</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-[#c9a961] mt-1 flex-shrink-0" />
-                <span className="text-white/60 text-sm">info@ystettehprime.com</span>
+                <span className="text-white/60 text-sm">ystetteh81@gmail.com</span>
               </li>
             </ul>
           </div>

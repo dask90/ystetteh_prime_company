@@ -9,6 +9,7 @@ const subsidiaries = [
         description: 'Premium livestock trading including cows, pigs, and goats. Sustainable farming practices with a focus on quality and scale.',
         icon: Wheat,
         color: '#7c9a6d',
+        image: 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&q=80&w=800',
     },
     {
         id: 'plastic-rubber',
@@ -16,13 +17,15 @@ const subsidiaries = [
         description: 'Industrial-grade manufacturing with international quality standards and cutting-edge production facilities.',
         icon: Factory,
         color: '#5a7a8a',
+        image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800',
     },
     {
         id: 'real-estate',
         name: 'Real Estate Development',
-        description: 'Premium residential and commercial property development across strategic locations in Ghana.',
+        description: 'Premium residential and commercial property property development across strategic locations in Ghana.',
         icon: Building2,
         color: '#a67c52',
+        image: 'https://images.unsplash.com/photo-1582408921715-18e7806367c1?auto=format&fit=crop&q=80&w=800',
     },
     {
         id: 'logistics',
@@ -30,6 +33,7 @@ const subsidiaries = [
         description: 'Reliable China ↔ Ghana trade routes with comprehensive shipping and logistics solutions.',
         icon: Ship,
         color: '#4a7c9a',
+        image: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&q=80&w=800',
     },
     {
         id: 'travel-tour',
@@ -37,6 +41,7 @@ const subsidiaries = [
         description: 'Specialized China visa processing and travel services with proven expertise and client satisfaction.',
         icon: Plane,
         color: '#9a6a7c',
+        image: 'https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?auto=format&fit=crop&q=80&w=800',
     },
     {
         id: 'charity',
@@ -44,6 +49,7 @@ const subsidiaries = [
         description: 'Community-focused initiatives creating lasting impact in education, health, and social development.',
         icon: Heart,
         color: '#c97a5a',
+        image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800',
     },
     {
         id: 'air-garage',
@@ -51,6 +57,7 @@ const subsidiaries = [
         description: 'Professional tyre services including vulcanizing, inspection, patching, replacement, and balancing.',
         icon: Car,
         color: '#6a6a6a',
+        image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=800',
     },
     {
         id: 'beauty-salon',
@@ -58,6 +65,7 @@ const subsidiaries = [
         description: 'Premium beauty and wellness services delivered in an elegant, world-class environment.',
         icon: Sparkles,
         color: '#d4a5a5',
+        image: 'https://images.unsplash.com/photo-1560066984-138dadb46036?auto=format&fit=crop&q=80&w=800',
     },
 ];
 
@@ -173,35 +181,35 @@ export default function HomePage() {
                                 <Link
                                     key={subsidiary.id}
                                     href={`/subsidiaries/${subsidiary.id}`}
-                                    className="bg-white border border-gray-200 p-8 hover:shadow-xl transition-all duration-300 text-left group hover:-translate-y-1"
-                                    style={{
-                                        borderTopColor: subsidiary.color,
-                                        borderTopWidth: '3px',
-                                    }}
+                                    className="bg-white border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 text-left group hover:-translate-y-2 flex flex-col"
                                 >
-                                    <div
-                                        className="w-14 h-14 mb-6 flex items-center justify-center transition-colors"
-                                        style={{
-                                            backgroundColor: `${subsidiary.color}15`,
-                                        }}
-                                    >
-                                        <Icon
-                                            className="w-7 h-7"
-                                            style={{ color: subsidiary.color }}
+                                    <div className="relative h-48 overflow-hidden">
+                                        <ImageWithFallback
+                                            src={subsidiary.image || ''}
+                                            alt={subsidiary.name}
+                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                         />
+                                        <div
+                                            className="absolute top-4 left-4 w-12 h-12 flex items-center justify-center shadow-lg"
+                                            style={{ backgroundColor: subsidiary.color }}
+                                        >
+                                            <Icon className="w-6 h-6 text-white" />
+                                        </div>
                                     </div>
-                                    <h3 className="text-lg text-[#1a1a1a] mb-3 group-hover:text-[#c9a961] transition-colors">
-                                        {subsidiary.name}
-                                    </h3>
-                                    <p className="text-sm text-gray-600 mb-4 leading-relaxed">
-                                        {subsidiary.description}
-                                    </p>
-                                    <div
-                                        className="flex items-center gap-2 text-sm group-hover:gap-3 transition-all"
-                                        style={{ color: subsidiary.color }}
-                                    >
-                                        Learn more
-                                        <ArrowRight className="w-4 h-4" />
+                                    <div className="p-8 border-t-4 flex-grow flex flex-col" style={{ borderTopColor: subsidiary.color }}>
+                                        <h3 className="text-lg font-bold text-[#1a1a1a] mb-3 group-hover:text-[#c9a961] transition-colors">
+                                            {subsidiary.name}
+                                        </h3>
+                                        <p className="text-sm text-gray-600 mb-6 line-clamp-3 leading-relaxed flex-grow">
+                                            {subsidiary.description}
+                                        </p>
+                                        <div
+                                            className="flex items-center gap-2 text-sm font-semibold group-hover:gap-3 transition-all mt-auto"
+                                            style={{ color: subsidiary.color }}
+                                        >
+                                            Learn more
+                                            <ArrowRight className="w-4 h-4" />
+                                        </div>
                                     </div>
                                 </Link>
                             );
@@ -209,6 +217,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
+
 
             {/* Industries We Operate In */}
             <section className="py-24 bg-gray-50">

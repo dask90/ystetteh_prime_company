@@ -177,7 +177,7 @@ export default async function SubsidiaryPage({ params }: SubsidiaryPageProps) {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            href={`tel:+233XXXXXXXXX`}
+                            href={`tel:+233256872852`}
                             className="px-8 py-4 bg-white hover:bg-gray-100 transition-colors flex items-center justify-center gap-2"
                             style={{ color: data.color }}
                         >
@@ -185,7 +185,7 @@ export default async function SubsidiaryPage({ params }: SubsidiaryPageProps) {
                             Call Us
                         </a>
                         <a
-                            href={`mailto:info@ystettehprime.com`}
+                            href={`mailto:ystetteh81@gmail.com`}
                             className="px-8 py-4 bg-white hover:bg-gray-100 transition-colors flex items-center justify-center gap-2"
                             style={{ color: data.color }}
                         >
@@ -193,7 +193,7 @@ export default async function SubsidiaryPage({ params }: SubsidiaryPageProps) {
                             Email Us
                         </a>
                         <a
-                            href={`https://wa.me/233XXXXXXXXX`}
+                            href={`https://wa.me/233256872852`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-8 py-4 bg-white hover:bg-gray-100 transition-colors flex items-center justify-center gap-2"

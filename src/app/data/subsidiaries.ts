@@ -5,7 +5,7 @@ export const subsidiaryData: Record<string, any> = {
         name: 'Farm Products',
         tagline: 'Premium Livestock Trading',
         color: '#7c9a6d',
-        heroImage: 'https://images.unsplash.com/photo-1700737837793-4190578e7ec9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaXZlc3RvY2slMjBmYXJtJTIwY2F0dGxlfGVufDF8fHx8MTc2OTI4MTE0MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        heroImage: '/farmhero.jpg',
         about: 'Y.S. Tetteh Farm Products is a leading livestock trading operation specializing in premium cattle, pigs, and goats. With sustainable farming practices and a commitment to animal welfare, we supply high-quality livestock to markets across Ghana.',
         scope: 'Operating multiple farms across strategic locations, we maintain the highest standards of animal husbandry, health management, and ethical trading practices. Our operations scale to meet both individual and wholesale demand.',
         services: [
@@ -41,7 +41,7 @@ export const subsidiaryData: Record<string, any> = {
         name: 'Plastic & Rubber Production',
         tagline: 'Industrial Manufacturing Excellence',
         color: '#5a7a8a',
-        heroImage: 'https://images.unsplash.com/photo-1720282338064-6c47e32bc0b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwbWFudWZhY3R1cmluZyUyMGZhY3Rvcnl8ZW58MXx8fHwxNzY5MjgxMTQyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        heroImage: '/plastichero.jpg',
         about: 'Our manufacturing division produces high-quality plastic and rubber products for industrial and commercial applications. With state-of-the-art facilities and rigorous quality control, we deliver products that meet international standards.',
         scope: 'Operating a modern manufacturing facility equipped with advanced machinery, we produce a wide range of plastic and rubber products serving diverse industries including construction, automotive, and consumer goods.',
         services: [
@@ -77,7 +77,7 @@ export const subsidiaryData: Record<string, any> = {
         name: 'Real Estate Development',
         tagline: 'Premium Property Development',
         color: '#a67c52',
-        heroImage: 'https://images.unsplash.com/photo-1638454668466-e8dbd5462f20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjByZWFsJTIwZXN0YXRlJTIwcHJvcGVydHl8ZW58MXx8fHwxNzY5Mjc3NDE2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        heroImage: '/estatehero.jpeg',
         about: 'Y.S. Tetteh Real Estate Development specializes in creating premium residential and commercial properties that combine quality construction, strategic location, and modern design. We build spaces that enhance lifestyles and create lasting value.',
         scope: 'With a portfolio spanning residential estates, commercial complexes, and mixed-use developments, we bring professional expertise to every aspect of property development from land acquisition to project delivery.',
         services: [
@@ -113,7 +113,7 @@ export const subsidiaryData: Record<string, any> = {
         name: 'International Logistics',
         tagline: 'China ↔ Ghana Trade Solutions',
         color: '#4a7c9a',
-        heroImage: 'https://images.unsplash.com/photo-1663672025510-9820760c825e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMHNoaXBwaW5nJTIwY29udGFpbmVyc3xlbnwxfHx8fDE3NjkyMzYyODB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        heroImage: '/logisticshero.jpg',
         about: 'Our logistics division provides comprehensive shipping and freight forwarding services connecting China and Ghana. With established trade routes, customs expertise, and reliable partners, we ensure your cargo reaches its destination safely and on time.',
         scope: 'Handling everything from small parcels to large commercial shipments, we offer end-to-end logistics solutions including freight forwarding, customs clearance, warehousing, and last-mile delivery.',
         services: [
@@ -149,7 +149,7 @@ export const subsidiaryData: Record<string, any> = {
         name: 'Y.S. Tetteh Travel & Tour',
         tagline: 'China Visa & Travel Services',
         color: '#9a6a7c',
-        heroImage: 'https://images.unsplash.com/photo-1596543864210-db0f87db765e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhaXJwb3J0JTIwdHJhdmVsJTIwZGVwYXJ0dXJlfGVufDF8fHx8MTc2OTI4MTE0M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        heroImage: '/travelhero.jpg',
         about: 'Y.S. Tetteh Travel & Tour specializes in China visa processing and travel services. With deep expertise in China-Ghana travel requirements and strong relationships with relevant authorities, we make your China travel seamless and stress-free.',
         scope: 'From visa application assistance to travel planning and support, we provide comprehensive services for business travelers, tourists, students, and anyone planning to visit China.',
         services: [
@@ -185,7 +185,7 @@ export const subsidiaryData: Record<string, any> = {
         name: 'Y.S. Tetteh Charity Foundation',
         tagline: 'Community Impact & Development',
         color: '#c97a5a',
-        heroImage: 'https://images.unsplash.com/photo-1766066015219-b10a97dbb781?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBjaGFyaXR5JTIwdm9sdW50ZWVyc3xlbnwxfHx8fDE3NjkyODExNDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        heroImage: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=800',
         about: 'The Y.S. Tetteh Charity Foundation is committed to creating lasting positive change in communities across Ghana. Through education, healthcare, and economic empowerment initiatives, we work to improve lives and create opportunities.',
         scope: 'Our programs focus on underserved communities, providing scholarships, healthcare support, skills training, and community development projects that create sustainable impact.',
         services: [
@@ -221,7 +221,7 @@ export const subsidiaryData: Record<string, any> = {
         name: 'Y.S. Tetteh Air Garage',
         tagline: 'Professional Tyre Services',
         color: '#6a6a6a',
-        heroImage: 'https://images.unsplash.com/photo-1764015805414-df7de89d405b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjB0aXJlJTIwc2VydmljZXxlbnwxfHx8fDE3NjkyMzMzNDJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        heroImage: '/garagehero.jpg',
         about: 'Y.S. Tetteh Air Garage provides comprehensive tyre services with professional expertise and modern equipment. From routine maintenance to emergency repairs, we keep your vehicle running safely and efficiently.',
         scope: 'Serving both individual vehicle owners and commercial fleet operators, we offer a full range of tyre services including vulcanizing, inspection, patching, replacement, and balancing.',
         services: [
@@ -262,7 +262,7 @@ export const subsidiaryData: Record<string, any> = {
         name: 'Obaapa Beauty Salon',
         tagline: 'Premium Beauty & Wellness',
         color: '#d4a5a5',
-        heroImage: 'https://images.unsplash.com/photo-1605980626247-eb3a2f10ec8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWF1dHklMjBzYWxvbiUyMHNwYXxlbnwxfHx8fDE3NjkyODExNDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+        heroImage: '/salonhero.jpg',
         about: 'Obaapa Beauty Salon offers premium beauty and wellness services in an elegant, relaxing environment. Our skilled professionals use high-quality products and the latest techniques to help you look and feel your best.',
         scope: 'From hair care to skincare, makeup to nails, we provide comprehensive beauty services tailored to your individual needs and preferences.',
         services: [
