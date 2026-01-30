@@ -250,58 +250,6 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* Chairman's Message */}
-            <section className="py-24 bg-[#1a1a1a] text-white">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div className="order-2 lg:order-1">
-                            <span className="text-[#c9a961] text-sm tracking-widest mb-4 block">
-                                LEADERSHIP
-                            </span>
-                            <h2 className="text-4xl lg:text-5xl mb-8">Chairman's Message</h2>
-                            <div className="space-y-6 text-white/80 leading-relaxed">
-                                <p>
-                                    "Building Y.S. Tetteh Prime Limited has been a journey of vision,
-                                    perseverance, and unwavering commitment to excellence. From our humble
-                                    beginnings to becoming a diversified group operating across multiple
-                                    continents, we have remained true to our core values."
-                                </p>
-                                <p>
-                                    "Our success is built on trust, integrity, and the dedication of our
-                                    people. As we continue to expand our footprint across Ghana and China,
-                                    we remain committed to creating value for our stakeholders, empowering
-                                    communities, and setting new standards of excellence in every industry
-                                    we serve."
-                                </p>
-                                <p>
-                                    "The future holds tremendous opportunities, and we are well-positioned
-                                    to capitalize on them while staying true to the principles that have
-                                    guided us from the beginning."
-                                </p>
-                            </div>
-                            <div className="mt-8 pt-8 border-t border-white/10">
-                                <div className="text-xl mb-1">Y.S. Tetteh</div>
-                                <div className="text-[#c9a961] text-sm tracking-widest">
-                                    CHAIRMAN & FOUNDER
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="order-1 lg:order-2">
-                            <div className="relative">
-                                <div className="aspect-[4/5] bg-gradient-to-br from-[#c9a961] to-[#a68751] p-1">
-                                    <ImageWithFallback
-                                        src="https://images.unsplash.com/photo-1745174837801-b7f37abe9d2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZnJpY2FuJTIwZXhlY3V0aXZlJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzY5MjgwODc3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                                        alt="Chairman Y.S. Tetteh"
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                                <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-[#c9a961]/10 -z-10" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             {/* Global Operations */}
             <section className="py-24 bg-white">
